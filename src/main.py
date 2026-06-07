@@ -15,7 +15,8 @@ if not HF_TOKEN:
     raise ValueError("HF_TOKEN environment variable not set")
  
 HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
-glossary = GlossaryMatcher()
+# glossary = GlossaryMatcher()
+glossary = None  # Placeholder for future glossary integration
  
 HF_SEAMLESS = "https://api-inference.huggingface.co/models/facebook/seamless-m4t-v2-large"
  
